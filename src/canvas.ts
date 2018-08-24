@@ -28,7 +28,7 @@ export function renderScore(ctx: CanvasRenderingContext2D, score: number) {
   drawText(ctx, score.toString(), textX, textY, 'rgba(0, 0, 0, 0.1)', 150);
 }
 
-export function renderApples(ctx: CanvasRenderingContext2D, apples: any[]) {
+export function renderApples(ctx: CanvasRenderingContext2D, apples: Array<Point2D>) {
   apples.forEach(apple => paintCell(ctx, apple, 'red'));
 }
 
